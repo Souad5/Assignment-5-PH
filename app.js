@@ -14,3 +14,4 @@ function getRandomColor() {
   // Add event listener to the div with id "bgColor"
   document.getElementById("bgColor").addEventListener("click", changeBgColor);
   
+  
