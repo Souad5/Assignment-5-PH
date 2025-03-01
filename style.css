@@ -1,3 +1,47 @@
-.bg-gradient{
-    background-image: linear-gradient(to right, blue , white);
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
 }
+    
+.div1 {
+    grid-column: span 3 / span 3;
+}
+
+.div2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+}
+
+.div3 {
+    margin-top: -100px;
+    grid-row-start: 2;
+}
+
+.div4 {
+    margin-top: -100px;
+    grid-row-start: 2;
+}
+
+.div5 {
+    margin-top: -100px;
+    grid-row-start: 2;
+}
+
+.div6 {
+    margin-top: -50px;
+    grid-row-start: 3;
+}
+
+.div7 {
+    margin-top: -50px;
+    grid-row-start: 3;
+}
+
+.div8 {
+    margin-top: -50px;
+    grid-row-start: 3;
+}
+        

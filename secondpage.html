@@ -2,29 +2,81 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <title>Second Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Second Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body data-theme="light" class="bg-blue-100 min-h-screen px-4">
-    <header class="rounded-xl"> 
-        <div class="navbar rounded-xl bg-base-100 flex justify-between items-center">
-            <div class=" gap-2">
-                <img src="./assets/logo.png" alt="Logo" class="w-10 sm:w-12">
-                <h1 class="text-xl sm:text-2xl">Dev<span class="font-bold">Board</span></h1>
-            </div>
-            <div>
-              <button id="backdesk" class="p-4 text-white rounded-xl bg-blue-600 whitespace-nowrap">
-                Back to Desk
-              </button>
-            </div>
-          </div>
-    </header>
-    <script src="firstpage.js"></script>
+  <header class="rounded-xl">
+    <div class="navbar rounded-xl bg-base-100 flex justify-between items-center">
+      <div class=" gap-2">
+        <img src="./assets/logo.png" alt="Logo" class="w-10 sm:w-12">
+        <h1 class="text-xl sm:text-2xl">Dev<span class="font-bold">Board</span></h1>
+      </div>
+      <div>
+        <button id="backdesk" class="p-4 text-white rounded-xl bg-blue-600 whitespace-nowrap">
+          Back to Desk
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" checked="checked" />
+      <div class="collapse-title font-semibold">What are the different ways to select an element in the DOM?</div>
+      <div class="collapse-content text-sm">
+        <ul>
+          <li>Using getElementById.</li>
+          <li>Using getElementsByClassName.</li>
+          <li>Using getElementsByTagName.</li>
+          <li>Using querySelector.</li>
+          <li>Using querySelectorAll.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">What is the difference between innerHTML, innerText, and textContent ?
+      </div>
+      <div class="collapse-content text-sm">
+        <ul>
+          <li>textContents is all text contained by an element and all its children that are for formatting purposes
+            only.</li>
+          <li>innerText returns all text contained by an element and all its child elements.</li>
+          <li>innerHtml returns all text, including html tags, that is contained by an element.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">What is event delegation in the DOM?</div>
+      <div class="collapse-content text-sm">In the DOM (Document Object Model), "event delegation" is a technique where
+        you attach a single event listener to a parent element, allowing it to handle events triggered on its child
+        elements, instead of adding separate listeners to each child element</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">What is event bubbling in the DOM?</div>
+      <div class="collapse-content text-sm">Event bubbling is when an event on a child element propagates up to its
+        parent and ancestors. It can be stopped using event.stopPropagation().</div>
+    </div>
+    <div class="collapse collapse-plus bg-base-100 border border-base-300">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title font-semibold">How do you create, add, and remove elements using JavaScript?</div>
+      <div class="collapse-content text-sm">
+        <ol>
+          <li>Create: let el = document.createElement("div");</li>
+          <li>Add: document.body.appendChild(el);</li>
+          <li>Remove: el.remove(); or parent.removeChild(el);</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  <script src="firstpage.js"></script>
 </body>
 
 </html>
