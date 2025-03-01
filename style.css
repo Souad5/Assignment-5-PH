@@ -2,12 +2,13 @@
 .parent {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
+    background-color: rgb(238, 235, 235);
 }
     
 .div1 {
-    grid-column: span 3 / span 3;
+    grid-column: span 3;
 }
 
 .div2 {
@@ -16,32 +17,5 @@
 }
 
 .div3 {
-    margin-top: -100px;
     grid-row-start: 2;
 }
-
-.div4 {
-    margin-top: -100px;
-    grid-row-start: 2;
-}
-
-.div5 {
-    margin-top: -100px;
-    grid-row-start: 2;
-}
-
-.div6 {
-    margin-top: -50px;
-    grid-row-start: 3;
-}
-
-.div7 {
-    margin-top: -50px;
-    grid-row-start: 3;
-}
-
-.div8 {
-    margin-top: -50px;
-    grid-row-start: 3;
-}
-        

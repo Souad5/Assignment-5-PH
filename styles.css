@@ -1,0 +1,16 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #bfdbfe;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 4 / 4;
+}
+
+.div2 {
+    grid-area: 1 / 4 / 4 / 5;
+    border-radius: 8px;
+}
